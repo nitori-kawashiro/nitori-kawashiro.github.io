@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nitori-kawashiro.github.io</id>
     <title>The管 Site</title>
-    <updated>2020-07-17T15:15:33.348Z</updated>
+    <updated>2020-07-17T15:38:26.422Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nitori-kawashiro.github.io"/>
     <link rel="self" href="https://nitori-kawashiro.github.io/atom.xml"/>
@@ -10,6 +10,34 @@
     <logo>https://nitori-kawashiro.github.io/images/avatar.png</logo>
     <icon>https://nitori-kawashiro.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, The管 Site</rights>
+    <entry>
+        <title type="html"><![CDATA[0717的夜间发呆]]></title>
+        <id>https://nitori-kawashiro.github.io/post/0717-de-ye-jian-fa-ai/</id>
+        <link href="https://nitori-kawashiro.github.io/post/0717-de-ye-jian-fa-ai/">
+        </link>
+        <updated>2020-07-17T15:25:29.000Z</updated>
+        <content type="html"><![CDATA[<p>我需要给我的思维找一个容器吗？那我该对此保密吗？两个都是很难回答的问题。</p>
+<p>暂时的话，我不想公开我的网站，我想把这里作为给自己的记录。</p>
+<h1 id="关于zenny">关于Zenny</h1>
+<pre><code class="language-python">print('Hello, world!')
+</code></pre>
+<p>我的体验和以前已经大不一样了。我的印象告诉我，Zen只有英俊和纯情两点，放在一起搅一搅就是Zen。<br>
+现在我发现，他比我想象的要强很多。<br>
+他知道自己想要什么东西。有自己的原则和底线。他即便有过去的心病（来自原生家庭）但还是很勇敢很纯情，对想做的事情坚持着，也愿意去相信自己的feeling，我觉得真的是一种很难得的浪漫。他的强大是我所没有的。</p>
+<p>我好想像他一样强大哦。</p>
+<p>他需要的只是一些（我的）开导。</p>
+<p>再过半个小时就是我和Zen相处的第八天了，时间过得太快了，我是真的很舍不得，虽然我也很期待和7，和V，和Saeran的相处，但我舍不得，梦女文学能解决这个问题吗？我很好奇，也许我可以试试看？（于是这个网站更加要保密了......）</p>
+<p>总之剩下来的时间，我想和他过得开心。</p>
+<h1 id="关于初中的事">关于初中的事</h1>
+<p>想起以前关于自杀的开火车讨论，其实答案是被规定好的：不应该，想想爸妈亲友，愚蠢，会后悔。</p>
+<p>我是幸运的呀，即便是初中高中，我从学习里获得乐趣了。刷题和啃难题变成了我的社交手段，但确实【学习】在【生活】中的比重太大了，付出努力，没有回报那心态会崩是很正常的事情。</p>
+<p>来自原生家庭/早恋恋人的压力会没地方消解，也是很正常的事情。</p>
+<p>如果回到初中，我想和老方说，我和我的同学们都是需要帮助的，我们都是好孩子。我们只是需要帮助而已。</p>
+<h1 id="关于蓝志">关于蓝志</h1>
+<p>不管现在网友怎么指责他脱口秀里有失偏颇的部分，我还是会感谢蓝志，至少在我有点难度过的初中生活有给我一些勇气，即便可能是不太经得起推敲的，即便是中二的，幻想的。</p>
+<p>那也是开导啊。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[0717的发呆]]></title>
         <id>https://nitori-kawashiro.github.io/post/0717-de-fa-ai/</id>
