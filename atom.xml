@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nitori-kawashiro.github.io</id>
     <title>The管 Site</title>
-    <updated>2020-07-17T11:41:54.973Z</updated>
+    <updated>2020-07-17T11:47:37.648Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nitori-kawashiro.github.io"/>
     <link rel="self" href="https://nitori-kawashiro.github.io/atom.xml"/>
-    <subtitle>-欢迎来到The管随意发披风的地方-  </subtitle>
+    <subtitle>🌸谢谢你来找我玩，请收下来自the管的祝福🌸</subtitle>
     <logo>https://nitori-kawashiro.github.io/images/avatar.png</logo>
     <icon>https://nitori-kawashiro.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, The管 Site</rights>
@@ -29,6 +29,7 @@
 </ul>
 <p>可能暂时就会是这些，之后还会再补充的！</p>
 <p>🌸但你永远可以相信管喵酱🌸</p>
+<p>也许我应该放一张图片，我的github用户名叫nitori-kawashiro，作为第一篇不如放我的手办图好了️！<img src="https://nitori-kawashiro.github.io/post-images/1594986397281.jpg" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
