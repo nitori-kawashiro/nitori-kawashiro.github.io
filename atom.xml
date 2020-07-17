@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nitori-kawashiro.github.io</id>
     <title>The管 Site</title>
-    <updated>2020-07-17T16:20:41.338Z</updated>
+    <updated>2020-07-17T16:52:25.152Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nitori-kawashiro.github.io"/>
     <link rel="self" href="https://nitori-kawashiro.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://nitori-kawashiro.github.io/images/avatar.png</logo>
     <icon>https://nitori-kawashiro.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, The管 Site</rights>
+    <entry>
+        <title type="html"><![CDATA[0718 关于出国]]></title>
+        <id>https://nitori-kawashiro.github.io/post/0718-guan-yu-chu-guo/</id>
+        <link href="https://nitori-kawashiro.github.io/post/0718-guan-yu-chu-guo/">
+        </link>
+        <updated>2020-07-17T16:29:38.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="我也不知道什么时候会有这种想法">我也不知道什么时候会有这种想法。</h1>
+<p>想起来都是一些超级中二的黑历史了，从初中时期开始。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[0717的夜间发呆]]></title>
         <id>https://nitori-kawashiro.github.io/post/0717-de-ye-jian-fa-ai/</id>
