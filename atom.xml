@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nitori-kawashiro.github.io</id>
     <title>The管 Site</title>
-    <updated>2020-07-18T12:58:11.066Z</updated>
+    <updated>2020-07-18T13:16:57.153Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nitori-kawashiro.github.io"/>
     <link rel="self" href="https://nitori-kawashiro.github.io/atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://nitori-kawashiro.github.io/images/avatar.png</logo>
     <icon>https://nitori-kawashiro.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, The管 Site</rights>
+    <entry>
+        <title type="html"><![CDATA[pdb文件｜END后面请记得回车一下？！@PLUMED]]></title>
+        <id>https://nitori-kawashiro.github.io/post/pdb-wen-jian-orend-hou-mian-qing-ji-de-hui-che-yi-xia-plumed/</id>
+        <link href="https://nitori-kawashiro.github.io/post/pdb-wen-jian-orend-hou-mian-qing-ji-de-hui-che-yi-xia-plumed/">
+        </link>
+        <updated>2020-07-18T13:00:20.000Z</updated>
+        <content type="html"><![CDATA[<p>无语子。<br>
+the管在PLUMED里用PATHMSD(的S path)，一开始的CV值全是稳稳的1.00000.<br>
+什么情况才能全是1.000呢？只有一帧呀。<br>
+计算zzz的时候，我搞了四个单帧pdb文件。</p>
+<p>PLUMED：至少要有一帧哦～<br>
+the管：？？？</p>
+<p>破案了于是：</p>
+<figure data-type="image" tabindex="1"><img src="https://nitori-kawashiro.github.io/post-images/1595077821850.jpeg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://nitori-kawashiro.github.io/post-images/1595077815208.jpeg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[VMD｜PATHMSD采样的问题&VMD移动原子坐标写出新的pdb文件]]></title>
         <id>https://nitori-kawashiro.github.io/post/vmdorpathmsd-cai-yang-de-wen-ti-andvmd-yi-dong-yuan-zi-zuo-biao-xie-chu-xin-de-pdb-wen-jian/</id>
