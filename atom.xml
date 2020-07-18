@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nitori-kawashiro.github.io</id>
     <title>The管 Site</title>
-    <updated>2020-07-18T11:53:48.619Z</updated>
+    <updated>2020-07-18T12:58:11.066Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nitori-kawashiro.github.io"/>
     <link rel="self" href="https://nitori-kawashiro.github.io/atom.xml"/>
@@ -10,6 +10,30 @@
     <logo>https://nitori-kawashiro.github.io/images/avatar.png</logo>
     <icon>https://nitori-kawashiro.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, The管 Site</rights>
+    <entry>
+        <title type="html"><![CDATA[VMD｜PATHMSD采样的问题&VMD移动原子坐标写出新的pdb文件]]></title>
+        <id>https://nitori-kawashiro.github.io/post/vmdorpathmsd-cai-yang-de-wen-ti-andvmd-yi-dong-yuan-zi-zuo-biao-xie-chu-xin-de-pdb-wen-jian/</id>
+        <link href="https://nitori-kawashiro.github.io/post/vmdorpathmsd-cai-yang-de-wen-ti-andvmd-yi-dong-yuan-zi-zuo-biao-xie-chu-xin-de-pdb-wen-jian/">
+        </link>
+        <updated>2020-07-18T12:42:31.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="动机">动机</h1>
+<p>在进行采样的时候，我发现在bias下的PATHMSD几乎还是卡在1.7-1.8（即便是COORD有变化的时候）。<br>
+这就很蹊跷不是吗......<br>
+聪明the管想到：可不可能是作为ref的几个pdb文件的坐标超出了the管实际的模拟的盒子？<br>
+心动不如行动，在这里，我们用到VMD来移动一下原子坐标^ ^</p>
+<h1 id="start">Start</h1>
+<pre><code class="language-bash">set all12 [atomselect top all]
+$all12 moveby {-10 -20 0}
+$all12 writepdb all12.pdb
+</code></pre>
+<p>命令都非常简单易懂！</p>
+<h1 id="结果">结果</h1>
+<p>看起来采样的问题并不是这个原因？<br>
+我需要继续观察一下。<br>
+昨天的测试没有加WHOLEMOLECULES，<br>
+今天加上了。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[0718 关于出国]]></title>
         <id>https://nitori-kawashiro.github.io/post/0718-guan-yu-chu-guo/</id>
