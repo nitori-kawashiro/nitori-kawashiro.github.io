@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nitori-kawashiro.github.io</id>
     <title>The管 Site</title>
-    <updated>2020-07-19T05:42:29.265Z</updated>
+    <updated>2020-07-19T08:15:08.725Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nitori-kawashiro.github.io"/>
     <link rel="self" href="https://nitori-kawashiro.github.io/atom.xml"/>
@@ -10,6 +10,73 @@
     <logo>https://nitori-kawashiro.github.io/images/avatar.png</logo>
     <icon>https://nitori-kawashiro.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, The管 Site</rights>
+    <entry>
+        <title type="html"><![CDATA[科研记录｜PLUMED-BEMeta采样为何还是几乎无动静]]></title>
+        <id>https://nitori-kawashiro.github.io/post/ke-yan-ji-lu-orplumed-bemeta-cai-yang-wei-he-huan-shi-ji-hu-wu-dong-jing/</id>
+        <link href="https://nitori-kawashiro.github.io/post/ke-yan-ji-lu-orplumed-bemeta-cai-yang-wei-he-huan-shi-ji-hu-wu-dong-jing/">
+        </link>
+        <updated>2020-07-19T06:03:18.000Z</updated>
+        <content type="html"><![CDATA[<p>果然还是有必要记录一下子！<br>
+CV3/CV4几乎就没有动过，但我怀疑这并不是它的锅，我看了一段轨迹，也出现了坐标数到3的时候，比如这边输出的是COORD小于4的时候，但确实可以观察到：构型就是没动。（看图）<br>
+不论是s path还是z path都可以说明，构型确实就是没有动过。<br>
+<img src="https://nitori-kawashiro.github.io/post-images/1595145965674.png" alt="" loading="lazy"><br>
+<img src="https://nitori-kawashiro.github.io/post-images/1595145971993.png" alt="" loading="lazy"></p>
+<p>来看一下目前metad的设置吧：</p>
+<pre><code class="language-bash">metad: METAD ...
+
+  ARG=@replicas:{cv1,cv2,cv3.sss,cv4.sss}
+  HEIGHT=0.2 
+  PACE=1000
+  BIASFACTOR=30.0
+  SIGMA=@replicas:{0.5,0.5,0.5,0.5}
+#  SIGMA=@replicas:{0.5,0.5,0.02,0.02}
+  TEMP=300.0
+
+  FILE=HILLS GRID_MIN=@replicas:{0,0,1,1} GRID_MAX=@replicas:{8,8,2,2}
+...
+</code></pre>
+<p>来和先前采样水分子q6的对比一下：</p>
+<pre><code class="language-bash">metad: METAD ARG=q6.mean PACE=500 HEIGHT=5.0 SIGMA=0.2 GRID_MIN=0.0 GRID_MAX=1.0 FILE=HILLS0406 TEMP=260.0
+</code></pre>
+<p>我现在想的是，先不用well-tempered，而是先拿最原始和暴力的metad测试一下：</p>
+<ul>
+<li>之前采水q6也有well-tempered采不动的经验；</li>
+<li>合理的cv范围已经很清晰了：有Uwall和Lwall拉着的。</li>
+</ul>
+<pre><code class="language-bash">metad: METAD ...
+
+  ARG=@replicas:{cv1,cv2,cv3.sss,cv4.sss}
+  HEIGHT=0.2 
+  PACE=1000
+  BIASFACTOR=30.0
+  SIGMA=@replicas:{0.5,0.5,0.5,0.5}
+#  SIGMA=@replicas:{0.5,0.5,0.02,0.02}
+  TEMP=300.0
+
+  FILE=HILLS GRID_MIN=@replicas:{0,0,1,1} GRID_MAX=@replicas:{8,8,2,2}
+...
+</code></pre>
+<p>今天用来测试的输入文件改动：</p>
+<ul>
+<li>Height，试试看5.0，我知道很高，dbq。</li>
+<li>删除biasfactor = 不用well-tempered。</li>
+</ul>
+<pre><code class="language-bash">metad: METAD ...
+
+  ARG=@replicas:{cv1,cv2,cv3.sss,cv4.sss}
+#  HEIGHT=0.2 
+  HEIGHT=5.0
+  PACE=1000
+#  BIASFACTOR=30.0
+  SIGMA=@replicas:{0.5,0.5,0.5,0.5}
+#  SIGMA=@replicas:{0.5,0.5,0.02,0.02}
+  TEMP=300.0
+
+  FILE=HILLS GRID_MIN=@replicas:{0,0,1,1} GRID_MAX=@replicas:{8,8,2,2}
+...
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[pdb文件｜END后面请记得回车一下？！@PLUMED]]></title>
         <id>https://nitori-kawashiro.github.io/post/pdb-wen-jian-orend-hou-mian-qing-ji-de-hui-che-yi-xia-plumed/</id>
