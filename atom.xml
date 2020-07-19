@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nitori-kawashiro.github.io</id>
     <title>The管 Site</title>
-    <updated>2020-07-19T08:15:08.725Z</updated>
+    <updated>2020-07-19T10:12:21.691Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nitori-kawashiro.github.io"/>
     <link rel="self" href="https://nitori-kawashiro.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://nitori-kawashiro.github.io/images/avatar.png</logo>
     <icon>https://nitori-kawashiro.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, The管 Site</rights>
+    <entry>
+        <title type="html"><![CDATA[肤浅的表扬能比肤浅的批评好多少呢？五十步笑百步罢了。]]></title>
+        <id>https://nitori-kawashiro.github.io/post/fu-qian-de-biao-yang-neng-bi-fu-qian-de-pi-ping-hao-duo-shao-ni-wu-shi-bu-xiao-bai-bu-ba-liao/</id>
+        <link href="https://nitori-kawashiro.github.io/post/fu-qian-de-biao-yang-neng-bi-fu-qian-de-pi-ping-hao-duo-shao-ni-wu-shi-bu-xiao-bai-bu-ba-liao/">
+        </link>
+        <updated>2020-07-19T09:12:18.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[科研记录｜PLUMED-BEMeta采样为何还是几乎无动静]]></title>
         <id>https://nitori-kawashiro.github.io/post/ke-yan-ji-lu-orplumed-bemeta-cai-yang-wei-he-huan-shi-ji-hu-wu-dong-jing/</id>
