@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>给自己看的总结教程向｜BEMeta@Plumed | The管 Site</title>
-<link rel="shortcut icon" href="https://nitori-kawashiro.github.io/favicon.ico?v=1595218066474">
+<link rel="shortcut icon" href="https://nitori-kawashiro.github.io/favicon.ico?v=1595225556009">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://nitori-kawashiro.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="给自己看的总结教程向｜BEMeta@Plumed | The管 Site - Atom Feed" href="https://nitori-kawashiro.github.io/atom.xml">
@@ -23,7 +23,7 @@ Belfast tutorial: Replica exchange II and Multiple walkers
       <div class="main-content">
         <div class="site-header">
   <a href="https://nitori-kawashiro.github.io">
-  <img class="avatar" src="https://nitori-kawashiro.github.io/images/avatar.png?v=1595218066474" alt="">
+  <img class="avatar" src="https://nitori-kawashiro.github.io/images/avatar.png?v=1595225556009" alt="">
   </a>
   <h1 class="site-title">
     The管 Site
@@ -117,7 +117,7 @@ Belfast tutorial: Replica exchange II and Multiple walkers
 <p>本质（是吗？）就是副本交换和Metad的结合啦！<br>
 输入文件我在Plumed官网的教程里有看见过一些不同的写法，也都有尝试过，再进一步弄懂根本的原理之前，以下这个@replicas语法是实际测试中确实可以稳定运行+相对简单的。<br>
 利用这个@replicas语法就仅需要一个plumed.dat输入文件了。</p>
-<pre><code class="language-plumed">MOLINFO STRUCTURE=??????
+<pre><code class="language-bash">MOLINFO STRUCTURE=??????
 RANDOM_EXCHANGES #(多个副本之间尝试随机进行交换)
 
 #(以下省略一堆限制条件，比如uwall、lwall、wholemolecules等等)

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nitori-kawashiro.github.io</id>
     <title>The管 Site</title>
-    <updated>2020-07-20T04:07:54.073Z</updated>
+    <updated>2020-07-20T06:13:55.281Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nitori-kawashiro.github.io"/>
     <link rel="self" href="https://nitori-kawashiro.github.io/atom.xml"/>
@@ -35,7 +35,7 @@
 <p>本质（是吗？）就是副本交换和Metad的结合啦！<br>
 输入文件我在Plumed官网的教程里有看见过一些不同的写法，也都有尝试过，再进一步弄懂根本的原理之前，以下这个@replicas语法是实际测试中确实可以稳定运行+相对简单的。<br>
 利用这个@replicas语法就仅需要一个plumed.dat输入文件了。</p>
-<pre><code class="language-plumed">MOLINFO STRUCTURE=??????
+<pre><code class="language-bash">MOLINFO STRUCTURE=??????
 RANDOM_EXCHANGES #(多个副本之间尝试随机进行交换)
 
 #(以下省略一堆限制条件，比如uwall、lwall、wholemolecules等等)
