@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nitori-kawashiro.github.io</id>
     <title>The管 Site</title>
-    <updated>2020-07-19T10:12:21.691Z</updated>
+    <updated>2020-07-20T04:07:54.073Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nitori-kawashiro.github.io"/>
     <link rel="self" href="https://nitori-kawashiro.github.io/atom.xml"/>
@@ -11,11 +11,70 @@
     <icon>https://nitori-kawashiro.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, The管 Site</rights>
     <entry>
-        <title type="html"><![CDATA[肤浅的表扬能比肤浅的批评好多少呢？五十步笑百步罢了。]]></title>
+        <title type="html"><![CDATA[给自己看的总结教程向｜BEMeta@Plumed]]></title>
+        <id>https://nitori-kawashiro.github.io/post/gei-zi-ji-kan-de-zong-jie-jiao-cheng-xiang-orbemetaplumed/</id>
+        <link href="https://nitori-kawashiro.github.io/post/gei-zi-ji-kan-de-zong-jie-jiao-cheng-xiang-orbemetaplumed/">
+        </link>
+        <updated>2020-07-19T15:05:44.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="学习和参考过的有用资料">学习和参考过的有用资料🌸</h1>
+<p>Belfast tutorial: Replica exchange II and Multiple walkers<br>
+[https://www.plumed.org/doc-v2.5/user-doc/html/belfast-8.html]</p>
+<p>Trieste tutorial: Running and analyzing multi-replica simulations<br>
+[https://www.plumed.org/doc-v2.5/user-doc/html/trieste-5.html]</p>
+<p>Plumed文档：）</p>
+<h1 id="软件版本">软件版本🌸</h1>
+<ul>
+<li>PLUMED 2.6.1</li>
+<li>Gromacs 2018.8</li>
+</ul>
+<h1 id="动机">动机🌸</h1>
+<p>算是the管自己的一个记录&amp;总结，方便自己看和归档，整理的过程也等于学到了。<br>
+现在我的网站是完全封闭的，说不定以后可以作为教程分享给大家。现有的plumed教程很棒但是年代久远，加上我自己写一个的话可以加入实际运行的效果反馈；以及比起读文档实操一遍可能会更有帮助。<br>
+总之现在还是给the管本管看的！</p>
+<h1 id="bemeta的输入文件语法">BEMeta的输入文件语法🌸</h1>
+<p>本质（是吗？）就是副本交换和Metad的结合啦！<br>
+输入文件我在Plumed官网的教程里有看见过一些不同的写法，也都有尝试过，再进一步弄懂根本的原理之前，以下这个@replicas语法是实际测试中确实可以稳定运行+相对简单的。<br>
+利用这个@replicas语法就仅需要一个plumed.dat输入文件了。</p>
+<pre><code class="language-plumed">MOLINFO STRUCTURE=??????
+RANDOM_EXCHANGES #(多个副本之间尝试随机进行交换)
+
+#(以下省略一堆限制条件，比如uwall、lwall、wholemolecules等等)
+cv1: ???
+cv2: ???
+cv3: ???
+cv4: ???
+#各CV定义完毕：）
+
+metad: METAD ...
+  ARG=@replicas:{cv1,cv2,cv3,cv4}
+  HEIGHT=5.0 #这样写的话就是各个CV的height值都统一
+  PACE=1000 
+#  BIASFACTOR=30.0 #如果想要well-tempered的话就设置Biasfactor
+
+  SIGMA=@replicas:{0.5,0.5,0.02,0.02}
+  TEMP=????
+
+  FILE=HILLS GRID_MIN=@replicas:{?,?,?,?} GRID_MAX=@replicas:{?,?,?,?}
+...
+</code></pre>
+<p>运行的时候就普普通通地：</p>
+<pre><code class="language-bash">mpirun -np ? gmx_mpi mdrun -v -plumed plumed.dat -multi 4 -replex 10000 -nsteps ?????????
+</code></pre>
+<p>#原始(暴力)的Metad和well-tempered的效果拉踩</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[发呆｜关于Maria]]></title>
         <id>https://nitori-kawashiro.github.io/post/fu-qian-de-biao-yang-neng-bi-fu-qian-de-pi-ping-hao-duo-shao-ni-wu-shi-bu-xiao-bai-bu-ba-liao/</id>
         <link href="https://nitori-kawashiro.github.io/post/fu-qian-de-biao-yang-neng-bi-fu-qian-de-pi-ping-hao-duo-shao-ni-wu-shi-bu-xiao-bai-bu-ba-liao/">
         </link>
         <updated>2020-07-19T09:12:18.000Z</updated>
+        <content type="html"><![CDATA[<p>肤浅的批评和肤浅的赞扬，五十步笑百步。<br>
+Maria死过，但似乎重生了。<br>
+抠着指甲的下午，她有她的三个亲人&amp;友人。<br>
+真情实感的戏码永远是扎得最深的锚，不是吗？<br>
+像IT crowd一样。</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[科研记录｜PLUMED-BEMeta采样为何还是几乎无动静]]></title>

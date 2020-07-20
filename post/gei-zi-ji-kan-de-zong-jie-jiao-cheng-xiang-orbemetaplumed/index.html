@@ -2,19 +2,18 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>0718 关于出国 | The管 Site</title>
+<title>给自己看的总结教程向｜BEMeta@Plumed | The管 Site</title>
 <link rel="shortcut icon" href="https://nitori-kawashiro.github.io/favicon.ico?v=1595218066474">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://nitori-kawashiro.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="0718 关于出国 | The管 Site - Atom Feed" href="https://nitori-kawashiro.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="给自己看的总结教程向｜BEMeta@Plumed | The管 Site - Atom Feed" href="https://nitori-kawashiro.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="我也不知道什么时候会有这种想法。
-想起来都是一些超级中二的黑历史了，从初中时期开始。
-第一次是发现关于自己的生活、原生家庭的负面情绪没有人可以倾诉、自己也没有办法消解，但是可以被音乐共情。
-曹老师教了我很多，给我推荐了很多歌，慢慢地我学会了..." />
+    <meta name="description" content="学习和参考过的有用资料🌸
+Belfast tutorial: Replica exchange II and Multiple walkers
+[https://www.plumed.org/doc-v2.5/user-doc/html/..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -83,37 +82,75 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              0718 关于出国
+              给自己看的总结教程向｜BEMeta@Plumed
             </h2>
             <div class="post-info">
               <span>
-                2020-07-18
+                2020-07-19
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
             </div>
             
-              <img class="post-feature-image" src="https://nitori-kawashiro.github.io/post-images/0718-guan-yu-chu-guo.jpg" alt="">
+              <img class="post-feature-image" src="https://nitori-kawashiro.github.io/post-images/gei-zi-ji-kan-de-zong-jie-jiao-cheng-xiang-orbemetaplumed.jpg" alt="">
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h1 id="我也不知道什么时候会有这种想法">我也不知道什么时候会有这种想法。</h1>
-<p>想起来都是一些超级中二的黑历史了，从初中时期开始。<br>
-第一次是发现关于自己的生活、原生家庭的负面情绪没有人可以倾诉、自己也没有办法消解，但是可以被音乐共情。<br>
-曹老师教了我很多，给我推荐了很多歌，慢慢地我学会了去音悦台，去自己找喜欢的歌，去主动和音乐共情。<br>
-初中不需要手机，一个mp3够我享受很久，我很快乐。<br>
-那个时候，音乐对我来说就是很好、闪闪发光的东西，所以我当时真情实感想当一个音乐人，这是可以理解的。</p>
-<h1 id="">。</h1>
-<p>对这些歌的喜欢带动了对英语的喜欢，于是我可以从学习英语中找到乐趣，我感到很快乐。<br>
-学了英语我可以学会唱这些歌，能学会更好地理解这些歌的意思。</p>
+                <h1 id="学习和参考过的有用资料">学习和参考过的有用资料🌸</h1>
+<p>Belfast tutorial: Replica exchange II and Multiple walkers<br>
+[https://www.plumed.org/doc-v2.5/user-doc/html/belfast-8.html]</p>
+<p>Trieste tutorial: Running and analyzing multi-replica simulations<br>
+[https://www.plumed.org/doc-v2.5/user-doc/html/trieste-5.html]</p>
+<p>Plumed文档：）</p>
+<h1 id="软件版本">软件版本🌸</h1>
+<ul>
+<li>PLUMED 2.6.1</li>
+<li>Gromacs 2018.8</li>
+</ul>
+<h1 id="动机">动机🌸</h1>
+<p>算是the管自己的一个记录&amp;总结，方便自己看和归档，整理的过程也等于学到了。<br>
+现在我的网站是完全封闭的，说不定以后可以作为教程分享给大家。现有的plumed教程很棒但是年代久远，加上我自己写一个的话可以加入实际运行的效果反馈；以及比起读文档实操一遍可能会更有帮助。<br>
+总之现在还是给the管本管看的！</p>
+<h1 id="bemeta的输入文件语法">BEMeta的输入文件语法🌸</h1>
+<p>本质（是吗？）就是副本交换和Metad的结合啦！<br>
+输入文件我在Plumed官网的教程里有看见过一些不同的写法，也都有尝试过，再进一步弄懂根本的原理之前，以下这个@replicas语法是实际测试中确实可以稳定运行+相对简单的。<br>
+利用这个@replicas语法就仅需要一个plumed.dat输入文件了。</p>
+<pre><code class="language-plumed">MOLINFO STRUCTURE=??????
+RANDOM_EXCHANGES #(多个副本之间尝试随机进行交换)
+
+#(以下省略一堆限制条件，比如uwall、lwall、wholemolecules等等)
+cv1: ???
+cv2: ???
+cv3: ???
+cv4: ???
+#各CV定义完毕：）
+
+metad: METAD ...
+  ARG=@replicas:{cv1,cv2,cv3,cv4}
+  HEIGHT=5.0 #这样写的话就是各个CV的height值都统一
+  PACE=1000 
+#  BIASFACTOR=30.0 #如果想要well-tempered的话就设置Biasfactor
+
+  SIGMA=@replicas:{0.5,0.5,0.02,0.02}
+  TEMP=????
+
+  FILE=HILLS GRID_MIN=@replicas:{?,?,?,?} GRID_MAX=@replicas:{?,?,?,?}
+...
+</code></pre>
+<p>运行的时候就普普通通地：</p>
+<pre><code class="language-bash">mpirun -np ? gmx_mpi mdrun -v -plumed plumed.dat -multi 4 -replex 10000 -nsteps ?????????
+</code></pre>
+<p>#原始(暴力)的Metad和well-tempered的效果拉踩</p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li><a href="#%E6%88%91%E4%B9%9F%E4%B8%8D%E7%9F%A5%E9%81%93%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%BC%9A%E6%9C%89%E8%BF%99%E7%A7%8D%E6%83%B3%E6%B3%95">我也不知道什么时候会有这种想法。</a></li>
-<li><a href="#">。</a></li>
+<li><a href="#%E5%AD%A6%E4%B9%A0%E5%92%8C%E5%8F%82%E8%80%83%E8%BF%87%E7%9A%84%E6%9C%89%E7%94%A8%E8%B5%84%E6%96%99">学习和参考过的有用资料🌸</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E7%89%88%E6%9C%AC">软件版本🌸</a></li>
+<li><a href="#%E5%8A%A8%E6%9C%BA">动机🌸</a></li>
+<li><a href="#bemeta%E7%9A%84%E8%BE%93%E5%85%A5%E6%96%87%E4%BB%B6%E8%AF%AD%E6%B3%95">BEMeta的输入文件语法🌸</a></li>
 </ul>
 
               </div>
@@ -124,9 +161,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://nitori-kawashiro.github.io/post/0717-de-ye-jian-fa-ai/">
+            <a href="https://nitori-kawashiro.github.io/post/fu-qian-de-biao-yang-neng-bi-fu-qian-de-pi-ping-hao-duo-shao-ni-wu-shi-bu-xiao-bai-bu-ba-liao/">
               <h3 class="post-title">
-                0717的夜间发呆
+                发呆｜关于Maria
               </h3>
             </a>
           </div>
