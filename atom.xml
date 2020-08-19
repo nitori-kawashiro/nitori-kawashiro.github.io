@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nitori-kawashiro.github.io</id>
     <title>The管 Site</title>
-    <updated>2020-07-20T06:13:55.281Z</updated>
+    <updated>2020-08-19T07:14:23.067Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nitori-kawashiro.github.io"/>
     <link rel="self" href="https://nitori-kawashiro.github.io/atom.xml"/>
@@ -10,6 +10,69 @@
     <logo>https://nitori-kawashiro.github.io/images/avatar.png</logo>
     <icon>https://nitori-kawashiro.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, The管 Site</rights>
+    <entry>
+        <title type="html"><![CDATA[变美功课！！]]></title>
+        <id>https://nitori-kawashiro.github.io/post/bian-mei-gong-ke/</id>
+        <link href="https://nitori-kawashiro.github.io/post/bian-mei-gong-ke/">
+        </link>
+        <updated>2020-08-19T07:05:17.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="关于护肤">关于护肤</h1>
+<h2 id="禁忌">禁忌</h2>
+<ul>
+<li>戒糖</li>
+<li>少喝奶<br>
+os：所以奶茶还是戒了吧：）</li>
+</ul>
+<h2 id="护肤品">护肤品</h2>
+<ul>
+<li>阿达帕林凝胶！我太棒了去开了药，每天要坚持子<br>
+然后是一些想买的护肤品：</li>
+<li>医生建议我使用泥状清洁面膜，我做了功课以后想买贝佳斯小绿泥火山泥面膜（清洁效果极强但可能刺激？）或者法国cattier粉泥（白一度？我好心动哦）</li>
+<li>洗面奶一天两次得坚持！！心动美帕蓝胖子洁面</li>
+<li>洗脸仪有必要吗？我得再观望观望</li>
+<li>面霜！心动FAB修复面霜（似乎晚上用很好）和资生堂水之印五合一面霜（补水快乐）</li>
+</ul>
+<h2 id="关于锻炼">关于锻炼</h2>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[希望变好的故事]]></title>
+        <id>https://nitori-kawashiro.github.io/post/xi-wang-bian-hao-de-gu-shi/</id>
+        <link href="https://nitori-kawashiro.github.io/post/xi-wang-bian-hao-de-gu-shi/">
+        </link>
+        <updated>2020-08-16T01:39:27.000Z</updated>
+        <content type="html"><![CDATA[<p>感情的破事不如顺其自然，随便吧，不想放太多精力。<br>
+作曲多请教！</p>
+<p>然后写一些我觉得需要养成的习惯：</p>
+<ol>
+<li>不去挠脸</li>
+<li>忌辛辣</li>
+<li>戒奶茶，做得不错，已经戒得七七八八了，周日可以cheat（？存疑）</li>
+<li>健身：健身环、有氧舞蹈。</li>
+<li>我想戒掉豆瓣，手机端app直接删除，然后每天留出20-30分钟作为娱乐消遣（此后慢慢减少就是了）。</li>
+</ol>
+<p>暂时这些<br>
+我还想读很多文献、学很多东西，要加油才行。<br>
+现在主要迷茫无聊是因为数据要等，很多东西要等。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[回程发呆呆+计划]]></title>
+        <id>https://nitori-kawashiro.github.io/post/hui-cheng-fa-ai-ai-ji-hua/</id>
+        <link href="https://nitori-kawashiro.github.io/post/hui-cheng-fa-ai-ai-ji-hua/">
+        </link>
+        <updated>2020-07-26T07:52:38.000Z</updated>
+        <content type="html"><![CDATA[<p>好久没来啦（虽然也就几天<br>
+要稍微复健一下才好。<br>
+首先是今天的任务：</p>
+<ul>
+<li>编译好老版本，把材料放上去跑</li>
+<li>整理明天可以展示的图</li>
+<li>测试最原始的cfm</li>
+</ul>
+<p>把精神集中在重要的事儿上</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[给自己看的总结教程向｜BEMeta@Plumed]]></title>
         <id>https://nitori-kawashiro.github.io/post/gei-zi-ji-kan-de-zong-jie-jiao-cheng-xiang-orbemetaplumed/</id>
@@ -227,28 +290,6 @@ $all12 writepdb all12.pdb
 <h1 id="关于蓝志">关于蓝志</h1>
 <p>不管现在网友怎么指责他脱口秀里有失偏颇的部分，我还是会感谢蓝志，至少在我有点难度过的初中生活有给我一些勇气，即便可能是不太经得起推敲的，即便是中二的，幻想的。</p>
 <p>那也是开导啊。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[0717的发呆]]></title>
-        <id>https://nitori-kawashiro.github.io/post/0717-de-fa-ai/</id>
-        <link href="https://nitori-kawashiro.github.io/post/0717-de-fa-ai/">
-        </link>
-        <updated>2020-07-17T11:35:52.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>0717雨🌧️</p>
-</blockquote>
-<p>今天算是救回来了Plumed上的采样任务（BEMeta）。希望今晚能有时间把Plumed剩下的CV限制给写写完。</p>
-<p>这是我第一天来到这里，名字姑且就叫做The管 site了，说不定比公众号什么的要方便不少，格式也是markdown的，就觉得比较友好，一会儿我得研究一下怎么样才能插图，是不是跟我自己的mkd完完全全一样！</p>
-<p>我没有什么规划。也许会把这个网站里的内容分成好几类：比如</p>
-<ul>
-<li>自己的碎碎念、记录、日记；</li>
-<li>干货，自己遇到的问题，说不定可以变成教程，甚至能给学弟学妹看的东西；</li>
-<li>课题记录。</li>
-</ul>
-<p>可能暂时就会是这些，之后还会再补充的！</p>
-<p>🌸但你永远可以相信管喵酱🌸</p>
-<p>也许我应该放一张图片，我的github用户名叫nitori-kawashiro，作为第一篇不如放我的手办图好了️！<img src="https://nitori-kawashiro.github.io/post-images/1594986397281.jpg" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>

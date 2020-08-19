@@ -2,20 +2,25 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>VMD｜PATHMSD采样的问题&amp;VMD移动原子坐标写出新的pdb文件 | The管 Site</title>
+<title>希望变好的故事 | The管 Site</title>
 <link rel="shortcut icon" href="https://nitori-kawashiro.github.io/favicon.ico?v=1597821255096">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://nitori-kawashiro.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="VMD｜PATHMSD采样的问题&amp;VMD移动原子坐标写出新的pdb文件 | The管 Site - Atom Feed" href="https://nitori-kawashiro.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="希望变好的故事 | The管 Site - Atom Feed" href="https://nitori-kawashiro.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="动机
-在进行采样的时候，我发现在bias下的PATHMSD几乎还是卡在1.7-1.8（即便是COORD有变化的时候）。
-这就很蹊跷不是吗......
-聪明the管想到：可不可能是作为ref的几个pdb文件的坐标超出了the管实际的模拟的盒子..." />
-    <meta name="keywords" content="VMD,PLUMED,pdb" />
+    <meta name="description" content="感情的破事不如顺其自然，随便吧，不想放太多精力。
+作曲多请教！
+然后写一些我觉得需要养成的习惯：
+
+不去挠脸
+忌辛辣
+戒奶茶，做得不错，已经戒得七七八八了，周日可以cheat（？存疑）
+健身：健身环、有氧舞蹈。
+我想戒掉豆瓣，手机端app直..." />
+    <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -83,59 +88,37 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              VMD｜PATHMSD采样的问题&amp;VMD移动原子坐标写出新的pdb文件
+              希望变好的故事
             </h2>
             <div class="post-info">
               <span>
-                2020-07-18
+                2020-08-16
               </span>
               <span>
                 1 min read
               </span>
               
-                <a href="https://nitori-kawashiro.github.io/tag/sMfpCoKEb/" class="post-tag">
-                  # VMD
-                </a>
-              
-                <a href="https://nitori-kawashiro.github.io/tag/erVDyHANMv/" class="post-tag">
-                  # PLUMED
-                </a>
-              
-                <a href="https://nitori-kawashiro.github.io/tag/zj4S2EfVIy/" class="post-tag">
-                  # pdb
-                </a>
-              
             </div>
-            
-              <img class="post-feature-image" src="https://nitori-kawashiro.github.io/post-images/vmdorpathmsd-cai-yang-de-wen-ti-andvmd-yi-dong-yuan-zi-zuo-biao-xie-chu-xin-de-pdb-wen-jian.png" alt="">
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h1 id="动机">动机</h1>
-<p>在进行采样的时候，我发现在bias下的PATHMSD几乎还是卡在1.7-1.8（即便是COORD有变化的时候）。<br>
-这就很蹊跷不是吗......<br>
-聪明the管想到：可不可能是作为ref的几个pdb文件的坐标超出了the管实际的模拟的盒子？<br>
-心动不如行动，在这里，我们用到VMD来移动一下原子坐标^ ^</p>
-<h1 id="start">Start</h1>
-<pre><code class="language-bash">set all12 [atomselect top all]
-$all12 moveby {-10 -20 0}
-$all12 writepdb all12.pdb
-</code></pre>
-<p>命令都非常简单易懂！</p>
-<h1 id="结果">结果</h1>
-<p>看起来采样的问题并不是这个原因？<br>
-我需要继续观察一下。<br>
-昨天的测试没有加WHOLEMOLECULES，<br>
-今天加上了。</p>
+                <p>感情的破事不如顺其自然，随便吧，不想放太多精力。<br>
+作曲多请教！</p>
+<p>然后写一些我觉得需要养成的习惯：</p>
+<ol>
+<li>不去挠脸</li>
+<li>忌辛辣</li>
+<li>戒奶茶，做得不错，已经戒得七七八八了，周日可以cheat（？存疑）</li>
+<li>健身：健身环、有氧舞蹈。</li>
+<li>我想戒掉豆瓣，手机端app直接删除，然后每天留出20-30分钟作为娱乐消遣（此后慢慢减少就是了）。</li>
+</ol>
+<p>暂时这些<br>
+我还想读很多文献、学很多东西，要加油才行。<br>
+现在主要迷茫无聊是因为数据要等，很多东西要等。</p>
 
               </div>
               <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#%E5%8A%A8%E6%9C%BA">动机</a></li>
-<li><a href="#start">Start</a></li>
-<li><a href="#%E7%BB%93%E6%9E%9C">结果</a></li>
-</ul>
-
+                
               </div>
             </div>
           </article>
@@ -144,9 +127,9 @@ $all12 writepdb all12.pdb
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://nitori-kawashiro.github.io/post/0718-guan-yu-chu-guo/">
+            <a href="https://nitori-kawashiro.github.io/post/hui-cheng-fa-ai-ai-ji-hua/">
               <h3 class="post-title">
-                0718 关于出国
+                回程发呆呆+计划
               </h3>
             </a>
           </div>
